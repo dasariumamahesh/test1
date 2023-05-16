@@ -6,7 +6,7 @@ app.get('/test', (req,res)=>{
     console.log("_________________Here")
     res.send("tets route working")
 })
-
-app.listen(3000,'0.0.0.0',()=>{
+port = process.env.PORT || 3000
+app.listen(port,()=>{
     console.log("running on port 3000")
 })
